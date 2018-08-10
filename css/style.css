@@ -1,40 +1,22 @@
 @font-face {
-    font-family: 'Keep Calm Med';
-    src: url('fonts/KeepCalm-Medium.eot');
-    src: url('fonts/KeepCalm-Medium.eot?#iefix') format('embedded-opentype'),
-        url('fonts/KeepCalm-Medium.woff2') format('woff2'),
-        url('fonts/KeepCalm-Medium.woff') format('woff'),
-        url('fonts/KeepCalm-Medium.ttf') format('truetype'),
-        url('fonts/KeepCalm-Medium.svg#KeepCalm-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
+    font-family: "Keep Calm";
+    src: url("css/fonts/KeepCalm-Medium.eot");
+    src: 
+    url("css/fonts/KeepCalm-Medium.woff") format("woff")
+    url("css/fonts/KeepCalm-Medium.woff2") format("woff2")
+    url("css/fonts/KeepCalm-Medium.ttf") format("truetype")
+    url("css/fonts/KeepCalm-Medium.svg#svgKeepCalm") format("svg");
 }
 
 @font-face {
-    font-family: 'Champagne & Limousines';
-    src: url('css/fonts/ChampagneLimousines.eot');
-    src: url('css/fonts/ChampagneLimousines.eot?#iefix') format('embedded-opentype'),
-        url('css/fonts/ChampagneLimousines.woff2') format('woff2'),
-        url('css/fonts/ChampagneLimousines.woff') format('woff'),
-        url('css/fonts/ChampagneLimousines.ttf') format('truetype'),
-        url('css/fonts/ChampagneLimousines.svg#Champagne&Limousines') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Champagne & Limousines";
+    src: url("css/fonts/ChampagneLimousines.eot");
+    src: 
+    url("css/fonts/ChampagneLimousines.woff") format("woff")
+    url("css/fonts/ChampagneLimousines.woff2") format("woff2")
+    url("css/fonts/ChampagneLimousines.ttf") format("truetype")
+    url("css/fonts/ChampagneLimousines.svg#svgChampagneLimousines") format("svg");
 }
-
-@font-face {
-    font-family: 'Champagne & Limousines Bold';
-    src: url('css/fonts/ChampagneLimousines-Bold.eot');
-    src: url('css/fonts/ChampagneLimousines-Bold.eot?#iefix') format('embedded-opentype'),
-        url('css/fonts/ChampagneLimousines-Bold.woff2') format('woff2'),
-        url('css/fonts/ChampagneLimousines-Bold.woff') format('woff'),
-        url('css/fonts/ChampagneLimousines-Bold.ttf') format('truetype'),
-        url('css/fonts/ChampagneLimousines-Bold.svg#Champagne&Limousines-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
 
 div.relative {
     position: relative;
@@ -47,12 +29,13 @@ body {
 
 h1 {
     font-family: 'Champagne & Limousines', Helvetica, sans-serif;
+    font-weight: normal;
     color: rgb(20, 175, 247);
     text-align: center;
     letter-spacing: 7px;
 }
 
 p {
-    font-family: 'Keep Calm Med', Helvetica, sans-serif;
+    font-family: 'Keep Calm', Helvetica, sans-serif;
     color: rgb(114, 114, 114);
 }
