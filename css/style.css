@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Keep Calm";
-    src: url("css/fonts/KeepCalm-Medium.eot");
+    src: url("css/fonts/keep-calm/KeepCalm-Medium.eot");
     src: 
-    url("css/fonts/KeepCalm-Medium.woff") format("woff")
-    url("css/fonts/KeepCalm-Medium.woff2") format("woff2")
-    url("css/fonts/KeepCalm-Medium.ttf") format("truetype")
-    url("css/fonts/KeepCalm-Medium.svg#svgKeepCalm") format("svg");
+    url("css/fonts/keep-calm/KeepCalm-Medium.woff") format("woff")
+    url("css/fonts/keep-calm/KeepCalm-Medium.woff2") format("woff2")
+    url("css/fonts/keep-calm/KeepCalm-Medium.ttf") format("truetype")
+    url("css/fonts/keep-calm/KeepCalm-Medium.svg#svgKeepCalm") format("svg");
 }
 
 @font-face {
     font-family: "Champagne & Limousines";
-    src: url("css/fonts/ChampagneLimousines.eot");
+    src: url("css/fonts/cl/ChampagneLimousines.eot");
     src: 
-    url("css/fonts/ChampagneLimousines.woff") format("woff")
-    url("css/fonts/ChampagneLimousines.woff2") format("woff2")
-    url("css/fonts/ChampagneLimousines.ttf") format("truetype")
-    url("css/fonts/ChampagneLimousines.svg#svgChampagneLimousines") format("svg");
+    url("css/fonts/cl/ChampagneLimousines.woff") format("woff")
+    url("css/fonts/cl/ChampagneLimousines.woff2") format("woff2")
+    url("css/fonts/cl/ChampagneLimousines.ttf") format("truetype")
+    url("css/fonts/cl/ChampagneLimousines.svg#svgChampagneLimousines") format("svg");
 }
 
 div.relative {
