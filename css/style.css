@@ -8,12 +8,27 @@
     url("css/fonts/KeepCalm-Medium.svg#svgKeepCalm") format("svg");
 }
 
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url("css/fonts/ChampagneLimousines.eot");
+    src: 
+    url("css/fonts/ChampagneLimousines.woff") format("woff")
+    url("css/fonts/ChampagneLimousines.woff2") format("woff2")
+    url("css/fonts/ChampagneLimousines.ttf") format("truetype")
+    url("css/fonts/ChampagneLimousines.svg#svgChampagneLimousines") format("svg");
+}
+
 body {
     background-color: black;
 }
 
 h1 {
-    font-family: 'Keep Calm', Helvetica, sans-serif;
-    color: aqua;
+    font-family: 'Champagne & Limousines', Helvetica, sans-serif;
+    color: rgb(20, 175, 247);
     text-align: center;
+}
+
+p {
+    font-family: 'Keep Calm', Helvetica, sans-serif;
+    color: rgb(114, 114, 114);
 }
