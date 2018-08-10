@@ -24,6 +24,7 @@ body {
 
 h1 {
     font-family: 'Champagne & Limousines', Helvetica, sans-serif;
+    font-weight: normal;
     color: rgb(20, 175, 247);
     text-align: center;
 }
