@@ -1,35 +1,35 @@
 @font-face {
     font-family: 'Keep Calm Med';
-    src: url('KeepCalm-Medium.eot');
-    src: url('KeepCalm-Medium.eot?#iefix') format('embedded-opentype'),
-        url('KeepCalm-Medium.woff2') format('woff2'),
-        url('KeepCalm-Medium.woff') format('woff'),
-        url('KeepCalm-Medium.ttf') format('truetype'),
-        url('KeepCalm-Medium.svg#KeepCalm-Medium') format('svg');
+    src: url('css/font/KeepCalm-Medium.eot');
+    src: url('css/font/KeepCalm-Medium.eot?#iefix') format('embedded-opentype'),
+        url('css/font/KeepCalm-Medium.woff2') format('woff2'),
+        url('css/font/KeepCalm-Medium.woff') format('woff'),
+        url('css/font/KeepCalm-Medium.ttf') format('truetype'),
+        url('css/font/KeepCalm-Medium.svg#KeepCalm-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Champagne & Limousines';
-    src: url('ChampagneLimousines.eot');
-    src: url('ChampagneLimousines.eot?#iefix') format('embedded-opentype'),
-        url('ChampagneLimousines.woff2') format('woff2'),
-        url('ChampagneLimousines.woff') format('woff'),
-        url('ChampagneLimousines.ttf') format('truetype'),
-        url('ChampagneLimousines.svg#Champagne&Limousines') format('svg');
+    src: url('css/font/ChampagneLimousines.eot');
+    src: url('css/font/ChampagneLimousines.eot?#iefix') format('embedded-opentype'),
+        url('css/font/ChampagneLimousines.woff2') format('woff2'),
+        url('css/font/ChampagneLimousines.woff') format('woff'),
+        url('css/font/ChampagneLimousines.ttf') format('truetype'),
+        url('css/font/ChampagneLimousines.svg#Champagne&Limousines') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Champagne & Limousines Bold';
-    src: url('ChampagneLimousines-Bold.eot');
-    src: url('ChampagneLimousines-Bold.eot?#iefix') format('embedded-opentype'),
-        url('ChampagneLimousines-Bold.woff2') format('woff2'),
-        url('ChampagneLimousines-Bold.woff') format('woff'),
-        url('ChampagneLimousines-Bold.ttf') format('truetype'),
-        url('ChampagneLimousines-Bold.svg#Champagne&Limousines-Bold') format('svg');
+    src: url('css/font/ChampagneLimousines-Bold.eot');
+    src: url('css/font/ChampagneLimousines-Bold.eot?#iefix') format('embedded-opentype'),
+        url('css/font/ChampagneLimousines-Bold.woff2') format('woff2'),
+        url('css/font/ChampagneLimousines-Bold.woff') format('woff'),
+        url('css/font/ChampagneLimousines-Bold.ttf') format('truetype'),
+        url('css/font/ChampagneLimousines-Bold.svg#Champagne&Limousines-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
