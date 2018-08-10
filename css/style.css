@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Keep Calm";
+    src: url("css/fonts/KeepCalm-Medium.eot");
+    src: 
+    url("css/fonts/KeepCalm-Medium.woff") format("woff")
+    url("css/fonts/KeepCalm-Medium.woff2") format("woff2")
+    url("css/fonts/KeepCalm-Medium.ttf") format("truetype")
+    url("css/fonts/KeepCalm-Medium.svg#svgKeepCalm") format("svg");
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Keep Calm', Helvetica, sans-serif;
+    color: aqua;
+    text-align: center;
+}
