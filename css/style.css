@@ -18,6 +18,11 @@
     url("css/fonts/ChampagneLimousines.svg#svgChampagneLimousines") format("svg");
 }
 
+div.relative {
+    position: relative;
+    top: 50px;
+}
+
 body {
     background-color: rgb(2, 5, 29);
 }
