@@ -5,6 +5,7 @@ div.relative {
 
 body {
     background-color: rgb(2, 5, 29);
+    text-align: center;
 }
 
 h1 {
@@ -42,7 +43,7 @@ p {
 }
 
 .text {
-    margin-top:50%;
+    margin-top:45%;
 }
 
 .about-me {
