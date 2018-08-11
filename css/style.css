@@ -20,17 +20,32 @@ p {
     color: rgb(114, 114, 114);
 }
 
-.button{
+.button {
     font-family: 'Keep Calm', Helvetica, sans-serif;
-    background-color: rgb(21, 209, 209);
     border: none;
     border-radius: 12px;
     color: white;
-    padding: 35px 35px;
+    padding: 60px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.about-me {
+    background-color: #56cece;
+}
+
+.projects {
+    background-color: #a265d4;
+}
+
+.leadership {
+    background-color: #d681d2;
+}
+
+.experience {
+    background-color: #faf172;
 }
