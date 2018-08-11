@@ -23,29 +23,40 @@ p {
 .button {
     font-family: 'Keep Calm', Helvetica, sans-serif;
     border: none;
-    border-radius: 12px;
+    border-radius: 25px;
     color: white;
-    padding: 60px 35px;
+    width:10em;
+    height:10em;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 10px;
     cursor: pointer;
+    display: inline-block;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.text {
+    margin-top:50%;
 }
 
 .about-me {
-    background-color: #56cece;
+    background-color: #56ceb0;
 }
 
 .projects {
-    background-color: #a265d4;
+    background-color: #a770d4;
 }
 
 .leadership {
-    background-color: #d681d2;
+    background-color: #e28ede;
 }
 
 .experience {
-    background-color: #faf172;
+    background-color: #dbd255;
 }
