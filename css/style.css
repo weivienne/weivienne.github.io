@@ -36,6 +36,10 @@ p {
     display: inline-block;
 }
 
+button:focus {
+    outline:0;
+}
+
 .row {
     margin-left: auto;
     margin-right: auto;
