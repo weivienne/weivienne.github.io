@@ -25,6 +25,7 @@ window.onload = function(){
     var span3 = document.getElementsByClassName("close3")[0];
 
     var span4 = document.getElementsByClassName("close4")[0];
+    
     // When the user clicks on the button, open the modal 
     btn1.onclick = function() {
         modal1.style.display = "block";
@@ -62,7 +63,6 @@ window.onload = function(){
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal1) {
-            alert("outside clicked");
             modal1.style.display = "none";
         }
         if (event.target == modal2) {
