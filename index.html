@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link  href="css/style.css" rel="stylesheet">
+    <link  href="js/script.js" rel="script">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Julius+Sans+One|Poiret+One|Quicksand:300" rel="stylesheet">
     <head>
         <title>Vivienne Ooi</title>
@@ -12,11 +13,44 @@
             <h1>VIVIENNE OOI</h1>
             <p>Hello world! Update20</p>
             <div class="row">
-                <a href = "#"><div class="button about-me"><div class="text">about me</div></div></a>
-                <a href = "#"><div class="button projects"><div class="text">projects</div></div></a>
+                <button id="button1" class="button about-me">about me</button>
+                <button id="button2" class="button projects">projects</button>
                 </br>
-                <a href = "#"><div class="button leadership"><div class="text">leadership</div></div></a>
-                <a href = "#"><div class="button experience"><div class="text">experience</div></div></a>
+                <button id="button3" class="button leadership">leadership</button>
+                <button id="button4" class="button experience">experience</button>
+        
+                <!-- The Modal -->
+                <div id="modal1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <p>about me here!</p>
+                    </div>
+                </div>
+
+                <div id="modal2" class="modal">
+             
+                    <div class="modal-content">
+                        <span class="close2">&times;</span>
+                        <p>projects</p>
+                    </div>
+                </div>
+         
+                <div id="modal3" class="modal">
+    
+                    <div class="modal-content">
+                        <span class="close3">&times;</span>
+                        <p>leadership</p>
+                    </div>
+                </div>
+                
+                <div id="modal4" class="modal">
+      
+                    <div class="modal-content">
+                        <span class="close4">&times;</span>
+                        <p>experience</p>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
