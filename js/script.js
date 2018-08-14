@@ -123,7 +123,7 @@ window.onload = function() {
           ams.innerHTML = "got experience?";
         } else {
           ams.innerHTML = "look up...not there, higher!";
-          document.title = "hi there!";
+          document.title = "got experience?";
         }
       }
     };
