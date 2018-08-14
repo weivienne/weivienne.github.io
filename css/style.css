@@ -23,6 +23,7 @@ p {
 
 .button {
     font-family: 'Comfortaa', cursive;
+    background-color: transparent;
     border: none;
     border-radius: 25px;
     color: white;
@@ -34,6 +35,7 @@ p {
     margin: 10px;
     cursor: pointer;
     display: inline-block;
+    transition: background-color 0.5s linear;
 }
 
 button:focus {
@@ -47,22 +49,37 @@ button:focus {
 }
 
 .about-me {
-    background-color: #56ceb0;
+  border: 1px solid #56ceb0;
+}
+
+.about-me:hover{
+  background-color: #56ceb0;
 }
 
 .projects {
-    background-color: #a770d4;
+    border: 1px solid #a770d4;
+}
+
+.projects:hover{
+  background-color: #a770d4;
 }
 
 .leadership {
-    background-color: #e28ede;
+    border: 1px solid #e28ede;
+}
+
+.leadership:hover{
+  background-color: #e28ede;
 }
 
 .experience {
-    background-color: #dbd255;
+    border: 1px solid #dbd255;
 }
 
-/* The Modal (background) */
+.experience:hover{
+  background-color: #dbd255;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
