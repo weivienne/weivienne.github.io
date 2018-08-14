@@ -56,6 +56,31 @@ p {
   color: rgb(114, 114, 114);
 }
 
+.countShow {
+  visibility: hidden;
+  font-family: "Comfortaa", cursive;
+  color: rgb(114, 114, 114);
+}
+
+.countShow .show {
+  visibility: visible;
+}
+
+.countShow .hide {
+  visibility: hidden;
+}
+
+.textShow {
+  padding: 20px;
+  visibility: visible;
+  font-family: "Comfortaa", cursive;
+  color: rgb(114, 114, 114);
+}
+
+.textShow .hide {
+  visibility: hidden;
+}
+
 .fa {
   width: 30px;
   text-align: center;

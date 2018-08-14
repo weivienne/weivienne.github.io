@@ -1,7 +1,10 @@
 window.onload = function() {
     // title color count
     var count = 0;
-    
+  
+    // boolean for first time site is loaded
+    var isFirstTime = 1;
+  
     // Get the modal
     var modal1 = document.getElementById("modal1");
   
@@ -11,8 +14,14 @@ window.onload = function() {
   
     var modal4 = document.getElementById("modal4");
   
-    // title button
+    // count text
+    var countNum = document.getElementById("countNum");
+  
+    // title
     var title = document.getElementById("title");
+  
+    // subheader
+    var subheader = document.getElementById("subheader");
   
     // Get the button that opens the modal
     var btn1 = document.getElementById("button1");
@@ -34,40 +43,55 @@ window.onload = function() {
   
     // change colors
     title.onclick = function() {
-      switch(count) {
+      switch (count) {
         case 0:
           title.className = "teal";
           ++count;
           break;
         case 1:
-            title.className = "purple";
-            ++count;
-            break;
+          title.className = "purple";
+          ++count;
+          break;
         case 2:
           title.className = "pink";
           ++count;
-          alert("4 more clicks!");
+          if (Boolean(isFirstTime)) {
+            countNum.classList.toggle("show");
+          }
           break;
         case 3:
-            title.className = "yellow";
-            ++count;
-            break;
-          case 4:
-            title.className = "teal";
-            ++count;
-            break;
-          case 5:
-            title.className = "purple";
-            ++count;
-            break;
-          case 6:
-            title.className = "blue";
-            count = 0;
-          alert("you did it!");
-            break;
+          title.className = "yellow";
+          ++count;
+          if (Boolean(isFirstTime)) {
+            countNum.innerHTML = "3";
+          }
+          break;
+        case 4:
+          title.className = "teal";
+          ++count;
+          if (Boolean(isFirstTime)) {
+            countNum.innerHTML = "2";
+          }
+          break;
+        case 5:
+          title.className = "purple";
+          ++count;
+          if (Boolean(isFirstTime)) {
+            countNum.innerHTML = "1";
+          }
+          break;
+        case 6:
+          title.className = "blue";
+          count = 0;
+          if (Boolean(isFirstTime)) {
+            countNum.classList.toggle("hide");
+            subheader.innerHTML = "hmm, there's something different about me...";
+          }
+          isFirstTime = 0;
+          break;
       }
     };
-    
+  
     // When the user clicks on the button, open the modal
     btn1.onclick = function() {
       modal1.style.display = "block";
@@ -118,3 +142,4 @@ window.onload = function() {
       }
     };
   };
+  
