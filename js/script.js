@@ -77,7 +77,8 @@ window.onload = function() {
           title.className = "pink";
           ++count;
           if (Boolean(isFirstTime)) {
-            countNum.classList.toggle("show");
+            // countNum.classList.toggle("show");
+            countNum.innerHTML = "4";
           }
           break;
         case 3:
@@ -105,7 +106,7 @@ window.onload = function() {
           title.className = "blue";
           count = 0;
           if (Boolean(isFirstTime)) {
-            countNum.classList.toggle("hide");
+            countNum.innerHTML = "";
             subheader.innerHTML = "hmm, there's something different about me...";
           }
           isClue2Done = 1;
@@ -122,7 +123,7 @@ window.onload = function() {
           ams.innerHTML = "got experience?";
         } else {
           ams.innerHTML = "look up...not there, higher!";
-          document.title = "got experience?";
+          document.title = "hi there!";
         }
       }
     };
