@@ -50,6 +50,7 @@ window.onload = function() {
           break;
         case 1:
           title.className = "purple";
+          document.title = "here!";
           ++count;
           break;
         case 2:
