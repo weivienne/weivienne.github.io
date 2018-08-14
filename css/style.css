@@ -1,34 +1,78 @@
 div.relative {
     position: relative;
     top: 30px;
-}
-
-body {
+  }
+  
+  body {
     background-color: rgb(2, 5, 29);
     text-align: center;
-}
-
-h1 {
-    font-family: 'Quicksand', sans-serif;
+  }
+  
+  h1 {
+    font-family: "Quicksand", sans-serif;
     font-weight: normal;
     color: rgb(20, 175, 247);
     text-align: center;
     letter-spacing: 7px;
-}
-
-p {
-    font-family: 'Comfortaa', cursive;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    font-family: "Comfortaa", cursive;
     color: rgb(114, 114, 114);
-}
-
-.button {
-    font-family: 'Comfortaa', cursive;
+  }
+  
+  .fa {
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover,
+  .fa:focus {
+    cursor: pointer;
+  }
+  
+  .fa-github {
+    color: white;
+  }
+  
+  .fa-code {
+    color: white;
+  }
+  .fa-github:hover,
+  .fa-github:focus {
+    color: #56ceb0;
+  }
+  
+  .fa-code {
+    color: white;
+  }
+  
+  .fa-code:hover,
+  .fa-code:focus {
+    color: #a770d4;
+  }
+  .fa-linkedin {
+    color: white;
+  }
+  
+  .fa-linkedin:hover,
+  .fa-linkedin:focus {
+    color: #e28ede;
+  }
+  
+  .button {
+    font-family: "Comfortaa", cursive;
     background-color: transparent;
     border: none;
     border-radius: 25px;
     color: white;
-    width:10em;
-    height:10em;
+    width: 10em;
+    height: 10em;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -36,51 +80,52 @@ p {
     cursor: pointer;
     display: inline-block;
     transition: background-color 0.5s linear;
-}
-
-button:focus {
-    outline:0;
-}
-
-.row {
+  }
+  
+  button:focus {
+    outline: 0;
+  }
+  
+  .row {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-}
-
-.about-me {
-  border: 1px solid #56ceb0;
-}
-
-.about-me:hover{
-  background-color: #56ceb0;
-}
-
-.projects {
+  }
+  
+  .about-me {
+    border: 1px solid #56ceb0;
+  }
+  
+  .about-me:hover {
+    background-color: #56ceb0;
+  }
+  
+  .projects {
     border: 1px solid #a770d4;
-}
-
-.projects:hover{
-  background-color: #a770d4;
-}
-
-.leadership {
+  }
+  
+  .projects:hover {
+    background-color: #a770d4;
+  }
+  
+  .leadership {
     border: 1px solid #e28ede;
-}
-
-.leadership:hover{
-  background-color: #e28ede;
-}
-
-.experience {
+  }
+  
+  .leadership:hover {
+    background-color: #e28ede;
+  }
+  
+  .experience {
     border: 1px solid #dbd255;
-}
-
-.experience:hover{
-  background-color: #dbd255;
-}
-
-.modal {
+  }
+  
+  .experience:hover {
+    background-color: #dbd255;
+  }
+  
+  /* The Modal (background) */
+  .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -89,31 +134,32 @@ button:focus {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
     border-radius: 16px;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    font-family: 'Comfortaa', cursive;
+  }
+  
+  /* The Close Button */
+  .close {
+    font-family: "Comfortaa", cursive;
     color: #aaa;
     float: center;
     font-size: 16px;
     font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
+  }
+  
+  .close:hover,
+  .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
+  }
+  
