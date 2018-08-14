@@ -119,10 +119,10 @@ window.onload = function() {
       modal1.style.display = "block";
       if (Boolean(isClue2Done)) {
         if (isMobile) {
-          ams.innerHTML = "looks like you're on mobile!";
+          ams.innerHTML = "got experience?";
         } else {
           ams.innerHTML = "look up...not there, higher!";
-          document.title = "hi there!";
+          document.title = "got experience?";
         }
       }
     };
