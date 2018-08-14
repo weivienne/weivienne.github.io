@@ -4,6 +4,7 @@ window.onload = function() {
   
     // boolean for first time site is loaded
     var isFirstTime = 1;
+    var isClue2Done = 0;
   
     // Get the modal
     var modal1 = document.getElementById("modal1");
@@ -14,6 +15,10 @@ window.onload = function() {
   
     var modal4 = document.getElementById("modal4");
   
+    //tab
+    // title
+    var title = document.getElementById("title");
+  
     // count text
     var countNum = document.getElementById("countNum");
   
@@ -22,6 +27,9 @@ window.onload = function() {
   
     // subheader
     var subheader = document.getElementById("subheader");
+  
+    // about-me secret text
+    var ams = document.getElementById("about-me-secret");
   
     // Get the button that opens the modal
     var btn1 = document.getElementById("button1");
@@ -50,7 +58,6 @@ window.onload = function() {
           break;
         case 1:
           title.className = "purple";
-          document.title = "here!";
           ++count;
           break;
         case 2:
@@ -88,6 +95,7 @@ window.onload = function() {
             countNum.classList.toggle("hide");
             subheader.innerHTML = "hmm, there's something different about me...";
           }
+          isClue2Done = 1;
           isFirstTime = 0;
           break;
       }
@@ -96,6 +104,10 @@ window.onload = function() {
     // When the user clicks on the button, open the modal
     btn1.onclick = function() {
       modal1.style.display = "block";
+      if (Boolean(isClue2Done)) {
+        ams.innerHTML = "look up! ...not there, higher!";
+        document.title = "hi there!";
+      }
     };
   
     btn2.onclick = function() {
