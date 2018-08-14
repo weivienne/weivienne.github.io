@@ -57,6 +57,7 @@ p {
 }
 
 .countShow {
+  display: inline-block;
   font-family: "Comfortaa", cursive;
   color: rgb(114, 114, 114);
 }
