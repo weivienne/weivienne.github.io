@@ -13,8 +13,14 @@ div.relative {
                                   supported by Chrome and Opera */
 }
 
+/* colors */
+
 .blue {
   color: rgb(20, 175, 247);
+}
+
+.blueBG {
+  background-color: rgb(20, 175, 247);
 }
 
 .teal {
@@ -89,6 +95,7 @@ p {
   visibility: hidden;
 }
 
+/* font-awesome icons */
 .fa {
   width: 30px;
   text-align: center;
@@ -104,9 +111,6 @@ p {
   color: white;
 }
 
-.fa-code {
-  color: white;
-}
 .fa-github:hover,
 .fa-github:focus {
   color: #56ceb0;
@@ -120,6 +124,7 @@ p {
 .fa-code:focus {
   color: #a770d4;
 }
+
 .fa-linkedin {
   color: white;
 }
@@ -127,6 +132,15 @@ p {
 .fa-linkedin:hover,
 .fa-linkedin:focus {
   color: #e28ede;
+}
+
+.fa-address-card {
+  color: white;
+}
+
+.fa-address-card:hover,
+.fa-address-card:focus {
+  color: rgb(20, 175, 247);
 }
 
 .button {
@@ -155,6 +169,8 @@ button:focus {
   margin-right: auto;
   width: 100%;
 }
+
+/* main button colors */
 
 .about-me {
   border: 1px solid #56ceb0;
@@ -188,6 +204,8 @@ button:focus {
   background-color: #dbd255;
 }
  
+/* fade in animation */
+
 .fade-in {
  opacity:0;  /* make things invisible upon start */
  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -231,6 +249,8 @@ animation-delay: 2s;
   opacity:0;
 }
 
+/* subheader typing animation */
+
 .console-container {
 
   font-family: "Montserrat";
@@ -245,6 +265,8 @@ animation-delay: 2s;
   top:-0.14em;
   left:10px;
 }
+
+/* modals */
 
 .overlay {
     height: 100%;
@@ -282,7 +304,7 @@ animation-delay: 2s;
   .overlay a {font-size: 20px}
 }
 
-/* The Close Button */
+/* modal close button */
 .close {
   font-family: "Comfortaa", cursive;
   color: #ffffff;
