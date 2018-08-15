@@ -12,12 +12,17 @@ window.onload = function() {
       isMobile = true;
   })(navigator.userAgent || navigator.vendor || window.opera);
 
+  // for the subheader animation
+ // function([string1, string2],target id,[color1,color2])    
+ consoleText(['Qualcomm Intern', 'AppJam+ Mentor', 'CitrusHack Winner', 'CWIC-SoCal Commitee Member', 'HackUCI Organizer', 'WICS Mentor', '#BUILTBYGIRLS Advisee', 'VGDC Officer'], 'text',['#56ceb0','#a770d4','#e28ede','#dbd255','#56ceb0','#a770d4', '#e28ede', '#dbd255']);
+  
   // title color count
   var count = 0;
 
   // boolean for first time site is loaded
   var isFirstTime = 1;
   var isClue2Done = 0;
+  var isClue3Done = 0;
 
   // Get the modal
   var modal1 = document.getElementById("modal1");
@@ -43,6 +48,9 @@ window.onload = function() {
 
   // about-me secret text
   var ams = document.getElementById("about-me-secret");
+  
+  // experience secret text
+  var ems = document.getElementById("experience-secret");
 
   // Get the button that opens the modal
   var btn1 = document.getElementById("button1");
@@ -124,6 +132,7 @@ window.onload = function() {
         ams.innerHTML = "look up!";
         document.title = "got experience?";
       }
+      isClue3Done = 1;
     }
   };
 
@@ -137,6 +146,9 @@ window.onload = function() {
 
   btn4.onclick = function() {
     modal4.style.width = "100%";
+    if (Boolean(isClue3Done)) {
+        ems.innerHTML = "hewwo";
+    }
   };
 
   // When the user clicks on CLOSE, close the modal
@@ -155,4 +167,54 @@ window.onload = function() {
   span4.onclick = function() {
     modal4.style.width = "0%";
   };
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+  
 };

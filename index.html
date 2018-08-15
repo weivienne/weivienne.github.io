@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/style.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Julius+Sans+One|Poiret+One|Quicksand:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Julius+Sans+One|Poiret+One|Quicksand:300|Montserrat:600" rel="stylesheet">
 <script src="js/script.js"></script>
 
 <head>
@@ -33,7 +33,10 @@
       <div class="fa fa-linkedin"></div>
     </a>
     <div class="textShow">
-      <span id="subheader">welcome to my portfolio</span>
+<!--       <span id="subheader">welcome to my portfolio</span> -->
+      <span id="subheader">
+      <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div></span>
+
     </div>
     <div class="row">
       <button id="button1" class="button about-me fade-in one">about me</button>
@@ -70,6 +73,9 @@
     <div id="modal4" class="overlay yellowBG">
         <div class="overlay-content">
           <p>experience</p>
+          <div class="textShow">
+            <span id="experience-secret"></span>
+          </div>
           <span class="close4 close">CLOSE</span>
         </div>
       </div>

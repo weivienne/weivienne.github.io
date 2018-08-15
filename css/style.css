@@ -187,12 +187,6 @@ button:focus {
 .experience:hover {
   background-color: #dbd255;
 }
-
-/* make keyframes that tell the start state and the end state of our object */
- 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
  
 .fade-in {
  opacity:0;  /* make things invisible upon start */
@@ -231,6 +225,25 @@ animation-delay: 1.6s;
 -webkit-animation-delay: 2s;
 -moz-animation-delay: 2s;
 animation-delay: 2s;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.console-container {
+
+  font-family: "Montserrat";
+  text-align:center;
+  display:block;
+  position:relative;
+  color:white;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
 }
 
 .overlay {
@@ -284,3 +297,9 @@ animation-delay: 2s;
   text-decoration: none;
   cursor: pointer;
 }
+
+/* make keyframes that tell the start state and the end state of our object */
+ 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
