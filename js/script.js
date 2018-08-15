@@ -121,7 +121,7 @@ window.onload = function() {
       if (isMobile) {
         ams.innerHTML = "got experience?";
       } else {
-        ams.innerHTML = "look up...not there, higher!";
+        ams.innerHTML = "look up!";
         document.title = "got experience?";
       }
     }
@@ -129,22 +129,18 @@ window.onload = function() {
 
   btn2.onclick = function() {
      modal2.style.width = "100%";
-    // modal2.style.display = "block";
   };
 
   btn3.onclick = function() {
-    // modal3.style.display = "block";
     modal3.style.width = "100%";
   };
 
   btn4.onclick = function() {
-    // modal4.style.display = "block";
     modal4.style.width = "100%";
   };
 
-  // When the user clicks on <span> (x), close the modal
+  // When the user clicks on CLOSE, close the modal
   span1.onclick = function() {
-    // modal1.style.display = "none";
     modal1.style.width = "0%";
   };
 
@@ -153,12 +149,10 @@ window.onload = function() {
   };
 
   span3.onclick = function() {
-    // modal3.style.display = "none";
     modal3.style.width = "0%";
   };
 
   span4.onclick = function() {
-    // modal4.style.display = "none";
     modal4.style.width = "0%";
   };
 };
