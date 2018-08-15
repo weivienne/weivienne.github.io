@@ -148,6 +148,7 @@ window.onload = function() {
     modal4.style.width = "100%";
     if (Boolean(isClue3Done)) {
         ems.innerHTML = "hewwo";
+        document.title = "Vivienne Ooi";
     }
   };
 
