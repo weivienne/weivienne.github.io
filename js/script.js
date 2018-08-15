@@ -12,9 +12,9 @@ window.onload = function() {
       isMobile = true;
   })(navigator.userAgent || navigator.vendor || window.opera);
 
-  // for the subheader animation
+ // for the subheader animation
  // function([string1, string2],target id,[color1,color2])    
- consoleText(['Qualcomm Intern', 'AppJam+ Mentor', 'CitrusHack Winner', 'CWIC-SoCal Commitee Member', 'HackUCI Organizer', 'WICS Mentor', '#BUILTBYGIRLS Advisee', 'VGDC Officer'], 'text',['#56ceb0','#a770d4','#e28ede','#dbd255','#56ceb0','#a770d4', '#e28ede', '#dbd255']);
+ consoleText(['Qualcomm Intern', 'HackUCI Organizer', 'WICS Mentor', '#BUILTBYGIRLS Advisee'], 'text',['#56ceb0','#a770d4','#e28ede','#dbd255']);
   
   // title color count
   var count = 0;
@@ -24,7 +24,7 @@ window.onload = function() {
   var isClue2Done = 0;
   var isClue3Done = 0;
 
-  // Get the modal
+  // get the modals
   var modal1 = document.getElementById("modal1");
 
   var modal2 = document.getElementById("modal2");
@@ -33,26 +33,25 @@ window.onload = function() {
 
   var modal4 = document.getElementById("modal4");
 
-  //tab
-  // title
+  // get the tab title
   var title = document.getElementById("title");
 
-  // count text
+  // get the count text
   var countNum = document.getElementById("countNum");
 
-  // title
+  // get the header
   var title = document.getElementById("title");
 
-  // subheader
+  // get the subheader
   var subheader = document.getElementById("subheader");
 
-  // about-me secret text
+  // get the about-me secret text
   var ams = document.getElementById("about-me-secret");
   
-  // experience secret text
+  // get the experience secret text
   var ems = document.getElementById("experience-secret");
 
-  // Get the button that opens the modal
+  // get the buttons that opens the modals
   var btn1 = document.getElementById("button1");
 
   var btn2 = document.getElementById("button2");
@@ -61,7 +60,7 @@ window.onload = function() {
 
   var btn4 = document.getElementById("button4");
 
-  // Get the <span> element that closes the modal
+  // get the close buttons
   var span1 = document.getElementsByClassName("close1")[0];
 
   var span2 = document.getElementsByClassName("close2")[0];
@@ -122,13 +121,14 @@ window.onload = function() {
     }
   };
 
-  // When the user clicks on the button, open the modal
+  // when the user clicks a button, open the corresponding modal
   btn1.onclick = function() {
     modal1.style.width = "100%";
     if (Boolean(isClue2Done)) {
       if (isMobile) {
         ams.innerHTML = "got experience?";
-      } else {
+      }
+      else {
         ams.innerHTML = "look up!";
         document.title = "got experience?";
       }
@@ -151,7 +151,7 @@ window.onload = function() {
     }
   };
 
-  // When the user clicks on CLOSE, close the modal
+  // when the user click the CLOSE button, close the modal
   span1.onclick = function() {
     modal1.style.width = "0%";
   };
@@ -168,53 +168,56 @@ window.onload = function() {
     modal4.style.width = "0%";
   };
 
-function consoleText(words, id, colors) {
-  if (colors === undefined) colors = ['#fff'];
-  var visible = true;
-  var con = document.getElementById('console');
-  var letterCount = 1;
-  var x = 1;
-  var waiting = false;
-  var target = document.getElementById(id)
-  target.setAttribute('style', 'color:' + colors[0])
-  window.setInterval(function() {
+  // loop through the subheader positions
+  function consoleText(words, id, colors) {
+    if (colors === undefined) colors = ['#fff'];
+    var visible = true;
+    var con = document.getElementById('console');
+    var letterCount = 1;
+    var x = 1;
+    var waiting = false;
+    var target = document.getElementById(id)
+    target.setAttribute('style', 'color:' + colors[0])
+    window.setInterval(function() {
 
-    if (letterCount === 0 && waiting === false) {
-      waiting = true;
-      target.innerHTML = words[0].substring(0, letterCount)
-      window.setTimeout(function() {
-        var usedColor = colors.shift();
-        colors.push(usedColor);
-        var usedWord = words.shift();
-        words.push(usedWord);
-        x = 1;
-        target.setAttribute('style', 'color:' + colors[0])
+      if (letterCount === 0 && waiting === false) {
+        waiting = true;
+        target.innerHTML = words[0].substring(0, letterCount)
+        window.setTimeout(function() {
+          var usedColor = colors.shift();
+          colors.push(usedColor);
+          var usedWord = words.shift();
+          words.push(usedWord);
+          x = 1;
+          target.setAttribute('style', 'color:' + colors[0])
+          letterCount += x;
+          waiting = false;
+        }, 1000)
+      }
+      else if (letterCount === words[0].length + 1 && waiting === false) {
+        waiting = true;
+        window.setTimeout(function() {
+          x = -1;
+          letterCount += x;
+          waiting = false;
+        }, 1000)
+      }
+      else if (waiting === false) {
+        target.innerHTML = words[0].substring(0, letterCount)
         letterCount += x;
-        waiting = false;
-      }, 1000)
-    } else if (letterCount === words[0].length + 1 && waiting === false) {
-      waiting = true;
-      window.setTimeout(function() {
-        x = -1;
-        letterCount += x;
-        waiting = false;
-      }, 1000)
-    } else if (waiting === false) {
-      target.innerHTML = words[0].substring(0, letterCount)
-      letterCount += x;
-    }
-  }, 120)
-  window.setInterval(function() {
-    if (visible === true) {
-      con.className = 'console-underscore hidden'
-      visible = false;
+      }
+    }, 120)
+    window.setInterval(function() {
+      if (visible === true) {
+        con.className = 'console-underscore hidden'
+        visible = false;
 
-    } else {
-      con.className = 'console-underscore'
+      }
+      else {
+        con.className = 'console-underscore'
 
-      visible = true;
-    }
-  }, 400)
-}
-  
+        visible = true;
+      }
+    }, 400)
+  }
 };
