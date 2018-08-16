@@ -281,7 +281,7 @@ animation-delay: 2s;
 
 .overlay-content {
     position: relative;
-    top: 25%;
+/*     top: 25%; */
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -315,9 +315,28 @@ animation-delay: 2s;
 
 .close:hover,
 .close:focus {
-  color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #3e9781;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #704197;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #a853a4;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #b3aa33;
 }
 
 /* make keyframes that tell the start state and the end state of our object */
