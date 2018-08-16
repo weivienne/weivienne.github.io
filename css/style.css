@@ -78,11 +78,6 @@ p {
   color: #ffffff;
 }
 
-.caption {
-  font-family: "Montserrat";
-  color: #ffffff;
-}
-
 .countShow {
   display: inline-block;
   font-family: "Comfortaa", cursive;
@@ -170,9 +165,9 @@ button:focus {
 }
 
 img {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
 }
 
 .row {
@@ -214,115 +209,117 @@ img {
 .experience:hover {
   background-color: #dbd255;
 }
- 
+
 /* fade in animation */
 
 .fade-in {
- opacity:0;  /* make things invisible upon start */
- -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
- -moz-animation:fadeIn ease-in 1;
- animation:fadeIn ease-in 1;
- 
- -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
- -moz-animation-fill-mode:forwards;
- animation-fill-mode:forwards;
- 
- -webkit-animation-duration:1s;
- -moz-animation-duration:1s;
- animation-duration:1s;
+  opacity: 0; /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
 }
- 
+
 .fade-in.one {
--webkit-animation-delay: 0.7s;
--moz-animation-delay: 0.7s;
-animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
- 
+
 .fade-in.two {
--webkit-animation-delay: 1.2s;
--moz-animation-delay:1.2s;
-animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
- 
+
 .fade-in.three {
--webkit-animation-delay: 1.6s;
--moz-animation-delay: 1.6s;
-animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
 }
 
 .fade-in.four {
--webkit-animation-delay: 2s;
--moz-animation-delay: 2s;
-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .hidden {
-  opacity:0;
+  opacity: 0;
 }
 
 /* subheader typing animation */
 
 .console-container {
-
   font-family: "Montserrat";
-  text-align:center;
-  display:block;
-  position:relative;
-  color:white;
+  text-align: center;
+  display: block;
+  position: relative;
+  color: white;
 }
 .console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
 }
 
 /* modals */
 
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .overlay-content {
-    position: relative;
-/*     top: 25%; */
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+  position: relative;
+  /*     top: 25%; */
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
 }
 
 /* modal close button */
 .close {
   color: #ffffff;
-      position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 .close:hover,
@@ -352,7 +349,28 @@ animation-delay: 2s;
 }
 
 /* make keyframes that tell the start state and the end state of our object */
- 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
