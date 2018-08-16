@@ -78,6 +78,11 @@ p {
   color: #ffffff;
 }
 
+.max-width {
+  width: 100%;
+  max-width: 400px;
+}
+
 .countShow {
   display: inline-block;
   font-family: "Comfortaa", cursive;
@@ -165,7 +170,7 @@ button:focus {
 }
 
 img {
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   height: auto;
 }
@@ -348,6 +353,12 @@ img {
 .close4:hover,
 .close4:focus {
   color: #b3aa33;
+}
+
+/* project modal */
+.project-container {
+  display: inline-block;
+  padding: 2em;
 }
 
 /* make keyframes that tell the start state and the end state of our object */
