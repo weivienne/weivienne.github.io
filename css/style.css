@@ -285,6 +285,8 @@ img {
 }
 
 .overlay-content {
+  opacity: 1;
+  /*   visibility: hidden; */
   position: relative;
   /*     top: 25%; */
   width: 100%;

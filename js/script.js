@@ -12,10 +12,19 @@ window.onload = function() {
       isMobile = true;
   })(navigator.userAgent || navigator.vendor || window.opera);
 
- // for the subheader animation
- // function([string1, string2],target id,[color1,color2])    
- consoleText(['Qualcomm Intern', 'HackUCI Organizer', 'WICS Mentor', '#BUILTBYGIRLS Advisee'], 'text',['#56ceb0','#a770d4','#e28ede','#dbd255']);
-  
+  // for the subheader animation
+  // function([string1, string2],target id,[color1,color2])
+  consoleText(
+    [
+      "Qualcomm Intern",
+      "HackUCI Organizer",
+      "WICS Mentor",
+      "#BUILTBYGIRLS Advisee"
+    ],
+    "text",
+    ["#56ceb0", "#a770d4", "#e28ede", "#dbd255"]
+  );
+
   // title color count
   var count = 0;
 
@@ -33,21 +42,24 @@ window.onload = function() {
 
   var modal4 = document.getElementById("modal4");
 
+  // get the modals' content
+  var modal1Content = document.getElementById("modal1-content");
+  var modal2Content = document.getElementById("modal2-content");
+  var modal3Content = document.getElementById("modal3-content");
+  var modal4Content = document.getElementById("modal4-content");
+
   // get the tab title
   var title = document.getElementById("title");
 
   // get the count text
   var countNum = document.getElementById("countNum");
 
-  // get the header
-  var title = document.getElementById("title");
-
   // get the subheader
   var subheader = document.getElementById("subheader");
 
   // get the about-me secret text
   var ams = document.getElementById("about-me-secret");
-  
+
   // get the experience secret text
   var ems = document.getElementById("experience-secret");
 
@@ -68,6 +80,15 @@ window.onload = function() {
   var span3 = document.getElementsByClassName("close3")[0];
 
   var span4 = document.getElementsByClassName("close4")[0];
+
+  // initialize modals' content opacity to 0
+  modal1Content.style.opacity = "0";
+
+  modal2Content.style.opacity = "0";
+
+  modal3Content.style.opacity = "0";
+
+  modal4Content.style.opacity = "0";
 
   // change colors
   title.onclick = function() {
@@ -124,11 +145,12 @@ window.onload = function() {
   // when the user clicks a button, open the corresponding modal
   btn1.onclick = function() {
     modal1.style.width = "100%";
+    modal1Content.style.transition = "2s opacity";
+    modal1Content.style.opacity = "1";
     if (Boolean(isClue2Done)) {
       if (isMobile) {
         ams.innerHTML = "got experience?";
-      }
-      else {
+      } else {
         ams.innerHTML = "look up!";
         document.title = "got experience?";
       }
@@ -137,88 +159,97 @@ window.onload = function() {
   };
 
   btn2.onclick = function() {
-     modal2.style.width = "100%";
+    modal2.style.width = "100%";
+    modal2Content.style.transition = "2s opacity";
+    modal2Content.style.opacity = "1";
   };
 
   btn3.onclick = function() {
     modal3.style.width = "100%";
+    modal3Content.style.transition = "2s opacity";
+    modal3Content.style.opacity = "1";
   };
 
   btn4.onclick = function() {
     modal4.style.width = "100%";
+    modal4Content.style.transition = "2s opacity";
+    modal4Content.style.opacity = "1";
     if (Boolean(isClue3Done)) {
-        ems.innerHTML = "hewwo";
-        document.title = "Vivienne Ooi";
+      ems.innerHTML = "hewwo";
+      document.title = "Vivienne Ooi";
     }
   };
 
   // when the user click the CLOSE button, close the modal
   span1.onclick = function() {
+    modal1Content.style.transition = "0.5s opacity";
+    modal1Content.style.opacity = "0";
     modal1.style.width = "0%";
   };
 
   span2.onclick = function() {
- modal2.style.width = "0%";
+    modal2Content.style.transition = "0.5s opacity";
+    modal2Content.style.opacity = "0";
+    modal2.style.width = "0%";
   };
 
   span3.onclick = function() {
+    modal3Content.style.transition = "0.5s opacity";
+    modal3Content.style.opacity = "0";
     modal3.style.width = "0%";
   };
 
   span4.onclick = function() {
+    modal4Content.style.transition = "0.5s opacity";
+    modal4Content.style.opacity = "0";
     modal4.style.width = "0%";
   };
 
   // loop through the subheader positions
   function consoleText(words, id, colors) {
-    if (colors === undefined) colors = ['#fff'];
+    if (colors === undefined) colors = ["#fff"];
     var visible = true;
-    var con = document.getElementById('console');
+    var con = document.getElementById("console");
     var letterCount = 1;
     var x = 1;
     var waiting = false;
-    var target = document.getElementById(id)
-    target.setAttribute('style', 'color:' + colors[0])
+    var target = document.getElementById(id);
+    target.setAttribute("style", "color:" + colors[0]);
     window.setInterval(function() {
-
       if (letterCount === 0 && waiting === false) {
         waiting = true;
-        target.innerHTML = words[0].substring(0, letterCount)
+        target.innerHTML = words[0].substring(0, letterCount);
         window.setTimeout(function() {
           var usedColor = colors.shift();
           colors.push(usedColor);
           var usedWord = words.shift();
           words.push(usedWord);
           x = 1;
-          target.setAttribute('style', 'color:' + colors[0])
+          target.setAttribute("style", "color:" + colors[0]);
           letterCount += x;
           waiting = false;
-        }, 1000)
-      }
-      else if (letterCount === words[0].length + 1 && waiting === false) {
+        }, 1000);
+      } else if (letterCount === words[0].length + 1 && waiting === false) {
         waiting = true;
         window.setTimeout(function() {
           x = -1;
           letterCount += x;
           waiting = false;
-        }, 1000)
-      }
-      else if (waiting === false) {
-        target.innerHTML = words[0].substring(0, letterCount)
+        }, 1000);
+      } else if (waiting === false) {
+        target.innerHTML = words[0].substring(0, letterCount);
         letterCount += x;
       }
-    }, 120)
+    }, 120);
     window.setInterval(function() {
       if (visible === true) {
-        con.className = 'console-underscore hidden'
+        con.className = "console-underscore hidden";
         visible = false;
-
-      }
-      else {
-        con.className = 'console-underscore'
+      } else {
+        con.className = "console-underscore";
 
         visible = true;
       }
-    }, 400)
+    }, 400);
   }
 };
