@@ -80,7 +80,7 @@ p {
 
 .max-width {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .countShow {
@@ -171,7 +171,7 @@ button:focus {
 
 img {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   height: auto;
 }
 
