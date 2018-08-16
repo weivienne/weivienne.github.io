@@ -165,15 +165,15 @@ button:focus {
 }
 
 img {
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     height: auto;
 }
 
 .row {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }
 
 /* main button colors */
