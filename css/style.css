@@ -78,6 +78,11 @@ p {
   color: #ffffff;
 }
 
+.caption {
+  font-family: "Montserrat";
+  color: #ffffff;
+}
+
 .countShow {
   display: inline-block;
   font-family: "Comfortaa", cursive;
@@ -312,11 +317,12 @@ animation-delay: 2s;
 
 /* modal close button */
 .close {
-  font-family: "Comfortaa", cursive;
   color: #ffffff;
-  float: center;
-  font-size: 16px;
-  font-weight: bold;
+      position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .close:hover,
