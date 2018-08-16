@@ -169,23 +169,6 @@ window.onload = function() {
     modal4.style.width = "0%";
   };
 
-    // when the user click the modal, close the modal
-    modal1.onclick = function() {
-      modal1.style.width = "0%";
-    };
-  
-    modal2.onclick = function() {
-   modal2.style.width = "0%";
-    };
-  
-    modal3.onclick = function() {
-      modal3.style.width = "0%";
-    };
-  
-    modal4.onclick = function() {
-      modal4.style.width = "0%";
-    };
-
   // loop through the subheader positions
   function consoleText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];
