@@ -95,6 +95,12 @@ p {
   max-width: 400px;
 }
 
+.logo-width {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+}
+
 .countShow {
   display: inline-block;
   font-family: "Comfortaa", cursive;
@@ -183,7 +189,6 @@ button:focus {
 
 img {
   width: 100%;
-  max-width: 400px;
   height: auto;
 }
 
