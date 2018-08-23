@@ -90,6 +90,22 @@ p {
   margin-top:10px;
 }
 
+.p-modal4 {
+  font-family: "Comfortaa", cursive;
+  color: #ffffff;
+  width: 90%;
+  max-width:650px;
+  float:left;
+  word-wrap:break-word;
+  padding: 0.5em;
+  line-height: 1.6;
+  margin-top:10px;
+}
+
+.title-size {
+  font-size: 1.3em;
+}
+
 .max-width {
   width: 100%;
   max-width: 400px;
