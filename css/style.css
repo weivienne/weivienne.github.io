@@ -376,7 +376,8 @@ img {
 
 /* about-me modal */
 .aboutme-container {
-  padding: 2em;
+  display: inline-block;
+  padding: 1.5em;
   text-align:left;
 }
 
