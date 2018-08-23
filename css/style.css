@@ -360,7 +360,6 @@ img {
 
 /* about-me modal */
 .aboutme-container {
-  display: inline-block;
   padding: 2em;
   text-align:left;
 }
