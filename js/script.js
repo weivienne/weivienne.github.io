@@ -22,7 +22,7 @@ window.onload = function() {
       "#BUILTBYGIRLS Advisee"
     ],
     "text",
-    ["#56ceb0", "#a770d4", "#e28ede", "#dbd255"]
+    ["#56ceb0", "#a770d4", "#e28ede", "#d1c849"]
   );
 
   // title color count
