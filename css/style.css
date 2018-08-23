@@ -48,11 +48,11 @@ div.relative {
 }
 
 .yellow {
-  color: #dbd255;
+  color: #d1c849;
 }
 
 .yellowBG {
-  background-color: #dbd255;
+  background-color: #d1c849;
 }
 
 body {
@@ -163,7 +163,7 @@ p {
 
 .fa-address-card:hover,
 .fa-address-card:focus {
-  color: #dbd255;
+  color: #d1c849;
 }
 
 .button {
@@ -229,11 +229,11 @@ img {
 }
 
 .experience {
-  border: 1px solid #dbd255;
+  border: 1px solid #d1c849;
 }
 
 .experience:hover {
-  background-color: #dbd255;
+  background-color: #d1c849;
 }
 
 /* fade in animation */
@@ -349,7 +349,7 @@ img {
 
 .close4:hover,
 .close4:focus {
-  color: #b3aa33;
+  color: #9e9732;
 }
 
 /* project modal */
