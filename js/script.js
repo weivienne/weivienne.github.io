@@ -19,7 +19,7 @@ window.onload = function() {
       "Qualcomm Intern",
       "HackUCI Organizer",
       "WICS Mentor",
-      "#BUILTBYGIRLS Advisee"
+      "#BUILTBYGIRLS Advisor"
     ],
     "text",
     ["#56ceb0", "#a770d4", "#e28ede", "#d1c849"]
