@@ -3,6 +3,10 @@ div.relative {
   top: 30px;
 }
 
+::-webkit-scrollbar { 
+  display: none; 
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
