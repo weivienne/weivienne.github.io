@@ -175,7 +175,7 @@ window.onload = function() {
     modal4Content.style.transition = "2s opacity";
     modal4Content.style.opacity = "1";
     if (Boolean(isClue3Done)) {
-      ems.innerHTML = "hewwo";
+      ems.innerHTML = "You've solved my little puzzle! :)";
       document.title = "Vivienne Ooi";
     }
   };
