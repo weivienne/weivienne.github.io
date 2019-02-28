@@ -380,6 +380,14 @@ img {
 .project-container {
   display: inline-block;
   padding: 2em;
+  transition: transform .2s;
+}
+
+/* on hover */
+.project-container:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
 }
 
 /* about-me modal */
